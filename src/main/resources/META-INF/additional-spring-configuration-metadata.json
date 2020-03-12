@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "github.client_id",
+      "type": "java.lang.String",
+      "description": "Description for github.client_id."
+  }
+] }

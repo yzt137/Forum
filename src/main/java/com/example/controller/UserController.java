@@ -7,9 +7,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class UserController {
 
-    @ResponseBody
-    @RequestMapping("/hello")
-    public String hello() {
-        return "Hello!";
+    @RequestMapping({"/index","/"})
+    public String index() {
+        return "index";
     }
 }
