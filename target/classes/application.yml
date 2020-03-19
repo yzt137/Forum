@@ -1,9 +1,20 @@
 spring:
   thymeleaf:
     cache: false
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/forum?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+  http:
+    encoding:
+      charset: UTF-8
 server:
   port: 8887
 github:
   client_id: Iv1.c05ceb7c8c20ee6b
   client_secret: 03e0f140c2aaa315311655d712ac8e4cdb6a87ce
   redirect_uri: http://localhost:8887/callback
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true

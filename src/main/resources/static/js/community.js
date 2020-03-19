@@ -27,13 +27,13 @@ function comment2target(targetId, type, content) {
             "type": type
         }),
         success: function (response) {
-            if (response.code == 200) {
+            if (response.code === 200) {
                 window.location.reload();
             } else {
-                if (response.code == 2003) {
+                if (response.code === 2003) {
                     var isAccepted = confirm(response.message);
                     if (isAccepted) {
-                        window.open("https://github.com/login/oauth/authorize?client_id=2859958f9f059979ed3a&redirect_uri=" + document.location.origin + "/callback&scope=user&state=1");
+                        window.open("https://github.com/login/oauth/authorize?client_id=Iv1.c05ceb7c8c20ee6b&redirect_uri=" + document.location.origin + "/callback&scope=user&state=1");
                         window.localStorage.setItem("closable", true);
                     }
                 } else {
@@ -82,7 +82,6 @@ function collapseComments(e) {
                         "class": "media-object img-rounded",
                         "src": comment.user.avatarUrl
                     }));
-
                     var mediaBodyElement = $("<div/>", {
                         "class": "media-body"
                     }).append($("<h5/>", {
@@ -96,7 +95,6 @@ function collapseComments(e) {
                         "class": "pull-right",
                         "html": moment(comment.gmtCreate).format('YYYY-MM-DD')
                     })));
-
                     var mediaElement = $("<div/>", {
                         "class": "media"
                     }).append(mediaLeftElement).append(mediaBodyElement);

@@ -46,7 +46,14 @@ body {
 }
 
 .media-body {
-    padding-top: 10px;
+    padding-top: 0px;
+}
+.media-heading {
+    padding-top: 0;
+    font-weight: bold;
+}
+.question-name{
+    font-size: smaller;
 }
 
 .text-desc {
@@ -61,10 +68,16 @@ body {
 
 .question-title {
     margin-top: 25px;
+    font-size: xx-large;
+    font-weight: bold;
 }
 
 .question-tag {
     margin-right: 5px;
+}
+
+.question-description {
+    font-size: large;
 }
 
 .question-related {
@@ -111,8 +124,9 @@ body {
 }
 
 .comments {
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    margin-top: 10px;
     border-bottom: 1px solid #eee;
 }
 
